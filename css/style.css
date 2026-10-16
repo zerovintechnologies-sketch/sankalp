@@ -530,7 +530,7 @@ button, input, select, textarea {
   align-items: center;
   gap: 18px;
   flex-wrap: wrap;
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .hero-epic .btn-glass {
@@ -546,64 +546,6 @@ button, input, select, textarea {
   background: rgba(255, 255, 255, 0.22);
   border-color: rgba(255, 255, 255, 0.6);
   color: #FFFFFF;
-}
-
-/* Hero Capabilities Dock */
-.hero-capabilities-dock {
-  background: rgba(15, 23, 42, 0.82);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: var(--radius-md);
-  padding: 24px 32px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-@media (min-width: 992px) {
-  .hero-capabilities-dock {
-    grid-template-columns: repeat(4, 1fr);
-    padding: 28px 40px;
-  }
-}
-
-.dock-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  text-align: left;
-}
-
-.dock-icon-box {
-  width: 48px;
-  height: 48px;
-  background: rgba(234, 88, 12, 0.15);
-  border: 1px solid rgba(234, 88, 12, 0.35);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FF7A30;
-  flex-shrink: 0;
-}
-
-.dock-val {
-  font-family: var(--font-display);
-  font-size: 1.75rem;
-  font-weight: 800;
-  color: #FFFFFF;
-  line-height: 1.1;
-}
-
-.dock-label {
-  font-size: 0.8125rem;
-  color: #94A3B8;
-  font-weight: 600;
-  margin-top: 2px;
 }
 
 /* ==========================================================================
@@ -2014,26 +1956,12 @@ textarea.form-control {
     flex-direction: column;
     width: 100%;
     gap: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .hero-cta-group .btn {
     width: 100%;
     padding: 14px 20px;
-  }
-
-  .hero-capabilities-dock {
-    grid-template-columns: 1fr;
-    gap: 16px;
-    padding: 20px;
-  }
-
-  .dock-item {
-    gap: 14px;
-  }
-
-  .dock-val {
-    font-size: 1.5rem;
   }
 
   .calc-card {

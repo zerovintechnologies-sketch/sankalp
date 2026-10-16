@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankalp Metal | Precision Steel Manufacturing & Heavy Alloy Solutions</title>
+    <meta name="description" content="Sankalp Metal is an ISO 9001:2015 certified steel manufacturer delivering precision-engineered steel coils, heavy pipes, structural plates, and custom metallurgy globally.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Sankalp Metal | Precision Steel Manufacturing">
+    <meta property="og:description" content="High-performance steel solutions engineered for extreme industrial demands.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sankalp Metal",
+      "url": "https://www.sankalpmetal.com",
+      "description": "ISO 9001:2015 certified steel manufacturing and precision alloy engineering solutions.",
+      "knowsAbout": ["Steel Coils", "Steel Pipes and Tubes", "Heavy Structural Plates", "Metallurgical Testing"]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Top Live Ticker / Announcement Bar -->
+    <div class="top-ticker">
+        <div class="container top-ticker-content">
+            <div class="ticker-status">
+                <span class="pulse-dot"></span>
+                <span>MILL STATUS: OPERATING AT 100% CAPACITY &bull; EXPRESS DISPATCH ACTIVE</span>
+            </div>
+            <div class="ticker-badges">
+                <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> ISO 9001:2015 CERTIFIED</span>
+                <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 48H RAPID RFQ TURNAROUND</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <!-- Left Logo -->
+            <a href="index.html" class="logo-wrap">
+                <img src="images/logo.png" alt="Sankalp Metal" class="brand-logo">
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav" id="mainNav">
+                <a href="index.html" class="nav-link active">HOME</a>
+                
+                <div class="nav-dropdown">
+                    <a href="index.html#products" class="nav-link">
+                        PRODUCTS &amp; SPECS 
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="dropdown-panel">
+                        <a href="index.html#products">Steel Coils &amp; Rolls <span class="badge">Hot/Cold</span></a>
+                        <a href="index.html#products">Pipes &amp; Seamless Tubes <span class="badge">API 5L</span></a>
+                        <a href="index.html#products">Plates &amp; Structural Slabs <span class="badge">IS 2062</span></a>
+                        <a href="index.html#calculator">Weight Calculator ⚡</a>
+                    </div>
+                </div>
+
+                <a href="index.html#pipeline" class="nav-link">MANUFACTURING</a>
+                <a href="index.html#quality" class="nav-link">METALLURGY LAB</a>
+                <a href="index.html#industries" class="nav-link">INDUSTRIES</a>
+                <a href="about.html" class="nav-link">ABOUT US</a>
+                <a href="contact.html" class="nav-link">CONTACT</a>
+            </nav>
+            
+            <!-- Right Actions -->
+            <div class="header-actions">
+                <button class="btn btn-forge btn-sm open-rfq-btn" id="headerRfqBtn">
+                    <span>Request Quote</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-epic" style="background-image: url('images/hero_bg.png');">
+        <div class="hero-ambient-glow"></div>
+        <div class="hero-grid-pattern"></div>
+        
+        <div class="container hero-content">
+            <div class="hero-pill-badge reveal-fade">
+                <span class="dot"></span>
+                <span>ADVANCED METALLURGY &bull; PRECISION STEEL SOLUTIONS</span>
+            </div>
+            
+            <h1 class="hero-headline reveal-fade">
+                ENGINEERED STEEL FORGED FOR <br>
+                <span class="text-gradient-forge">SCALE &amp; PRECISION</span>
+            </h1>
+            
+            <p class="hero-desc reveal-fade">
+                Delivering high-tensile steel coils, precision seamless tubes, structural plates, and custom alloy engineering designed to meet rigorous automotive, energy, and civil infrastructure benchmarks.
+            </p>
+            
+            <div class="hero-cta-group reveal-fade">
+                <a href="#products" class="btn btn-forge btn-lg">
+                    <span>Explore Products &amp; Specs</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+                <a href="#calculator" class="btn btn-glass btn-lg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+                    <span>Instant Steel Calculator</span>
+                </a>
+            </div>
+
+            <!-- Hero Capabilities Dock -->
+            <div class="hero-capabilities-dock reveal-fade">
+                <div class="dock-item">
+                    <div class="dock-icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"></path></svg>
+                    </div>
+                    <div>
+                        <div class="dock-val">&plusmn;0.02<span style="font-size:1.1rem; color:var(--color-forge-light);">mm</span></div>
+                        <div class="dock-label">Dimensional Tolerance</div>
+                    </div>
+                </div>
+
+                <div class="dock-item">
+                    <div class="dock-icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                    </div>
+                    <div>
+                        <div class="dock-val">50,000<span style="font-size:1.1rem; color:var(--color-forge-light);">+ MT</span></div>
+                        <div class="dock-label">Annual Mill Throughput</div>
+                    </div>
+                </div>
+
+                <div class="dock-item">
+                    <div class="dock-icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <div>
+                        <div class="dock-val">400<span style="font-size:1.1rem; color:var(--color-forge-light);">+</span></div>
+                        <div class="dock-label">Enterprise Clients</div>
+                    </div>
+                </div>
+
+                <div class="dock-item">
+                    <div class="dock-icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                    </div>
+                    <div>
+                        <div class="dock-val">48<span style="font-size:1.1rem; color:var(--color-forge-light);">h</span></div>
+                        <div class="dock-label">Express Rapid Dispatch</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview / Precision Highlight -->
+    <section class="section-padding" style="background:var(--color-canvas);">
+        <div class="container about-intro-grid">
+            <div class="about-media-box reveal-fade">
+                <img src="images/about_intro.png" alt="Sankalp Metal CNC Precision Machining">
+            </div>
+            <div class="reveal-fade">
+                <span class="section-tag">Built on Metallurgical Integrity</span>
+                <h2 class="section-title">Built on Strength.<br>Driven by Industrial Precision.</h2>
+                <p style="font-size:1.125rem; color:var(--color-text-heading); font-weight:600; margin-bottom:18px;">
+                    Sankalp Metal combines state-of-the-art rolling mill technologies with stringent metallurgical testing to deliver standard and customized metal solutions for heavy engineering.
+                </p>
+                <p style="color:var(--color-text-muted); margin-bottom:28px; line-height:1.75;">
+                    Whether you require high-tensile hot-rolled steel coils, seamless pressure tubes, or precision flame-cut structural plates, our end-to-end quality assurance guarantees zero defects and adherence to international ASTM, DIN, and IS standards.
+                </p>
+                <div style="display:flex; gap:16px; flex-wrap:wrap;">
+                    <a href="about.html" class="btn btn-forge">
+                        <span>Our Heritage &amp; Infrastructure</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                    <button class="btn btn-glass open-rfq-btn">
+                        <span>Get Factory Direct Pricing</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Theoretical Steel Calculator -->
+    <section class="section-padding calc-section" id="calculator">
+        <div class="container">
+            <div class="calc-grid">
+                <div class="reveal-fade">
+                    <span class="section-tag">Engineering Tool</span>
+                    <h2 class="section-title">Steel Weight &amp; Spec Estimator</h2>
+                    <p class="section-subtitle" style="margin-bottom:28px;">
+                        Quickly estimate theoretical material weight for plates, pipes, or solid rounds based on certified alloy densities (7.85 g/cm&sup3; carbon steel). Instantly forward calculated specs to our rapid quotation desk.
+                    </p>
+                    <div style="display:flex; flex-direction:column; gap:16px;">
+                        <div style="display:flex; align-items:center; gap:12px; color:var(--color-titanium-200);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-forge-primary)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Accurate to Standard Industrial ASTM / IS Weight Formulas</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:12px; color:var(--color-titanium-200);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-forge-primary)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Direct Linkage to Commercial RFQ Desk</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:12px; color:var(--color-titanium-200);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-forge-primary)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Batch Bundling &amp; Custom Sizing Consultations Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculator Card -->
+                <div class="calc-card reveal-fade">
+                    <!-- Shape Select Tabs -->
+                    <div class="calc-shape-tabs" id="shapeTabs">
+                        <button class="shape-tab active" data-shape="plate">Plate / Sheet</button>
+                        <button class="shape-tab" data-shape="pipe">Round Pipe</button>
+                        <button class="shape-tab" data-shape="round">Solid Bar</button>
+                        <button class="shape-tab" data-shape="coil">Steel Coil</button>
+                    </div>
+
+                    <!-- Material Grade Select -->
+                    <div class="calc-form-group">
+                        <label class="calc-label">
+                            <span>Material Alloy / Grade</span>
+                            <span style="color:var(--color-forge-light); font-family:var(--font-mono); font-size:0.75rem;">Density: 7.85 g/cm&sup3;</span>
+                        </label>
+                        <select class="calc-select" id="calcGrade">
+                            <option value="1.0">Structural Carbon Steel (IS 2062 / ASTM A36)</option>
+                            <option value="1.02">Stainless Steel (AISI 304 / 316L)</option>
+                            <option value="1.01">High-Tensile Boiler Grade (SA 516 Gr.70)</option>
+                            <option value="0.99">Corten Weathering Alloy Steel</option>
+                        </select>
+                    </div>
+
+                    <!-- Dynamic Dimensions Inputs -->
+                    <div id="dynamicDimensions">
+                        <!-- Plate Default Inputs -->
+                        <div class="calc-dims-grid">
+                            <div class="calc-form-group">
+                                <label class="calc-label">Thick (mm)</label>
+                                <input type="number" class="calc-input" id="dimThick" value="12" min="0.5" step="0.5">
+                            </div>
+                            <div class="calc-form-group">
+                                <label class="calc-label">Width (mm)</label>
+                                <input type="number" class="calc-input" id="dimWidth" value="1500" min="10">
+                            </div>
+                            <div class="calc-form-group">
+                                <label class="calc-label">Length (mm)</label>
+                                <input type="number" class="calc-input" id="dimLength" value="6000" min="10">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-form-group">
+                        <label class="calc-label">
+                            <span>Quantity (Units / Pieces)</span>
+                            <span id="qtyDisplay" style="color:var(--color-titanium-400);">1 pc</span>
+                        </label>
+                        <input type="number" class="calc-input" id="calcQty" value="1" min="1">
+                    </div>
+
+                    <!-- Calculated Result Display -->
+                    <div class="calc-result-box">
+                        <div>
+                            <div class="result-metric-label">Estimated Total Weight</div>
+                            <div style="font-size:0.8125rem; color:var(--color-titanium-400);">Theoretical Weight @ 7.85 kg/dm&sup3;</div>
+                        </div>
+                        <div class="result-metric-val" id="calcResultVal">847.8 <span style="font-size:1.125rem; font-weight:500;">kg</span></div>
+                    </div>
+
+                    <button class="btn btn-forge" style="width:100%;" id="btnForwardRfq">
+                        <span>Send Spec to RFQ Quotation Desk</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Metallurgical Solutions -->
+    <section class="section-padding products-section" id="products">
+        <div class="container">
+            <div class="section-header text-center reveal-fade">
+                <span class="section-tag">Core Metal Offerings</span>
+                <h2 class="section-title">Engineered Steel Portfolio</h2>
+                <p class="section-subtitle">
+                    Manufactured to strict metallurgical tolerances with certified mill test reports (MTR 3.1) for infrastructure, power, automotive, and heavy fabrication.
+                </p>
+            </div>
+
+            <!-- Category Filter Bar -->
+            <div class="filter-bar reveal-fade">
+                <button class="filter-btn active" data-filter="all">All Solutions</button>
+                <button class="filter-btn" data-filter="coils">Steel Coils</button>
+                <button class="filter-btn" data-filter="pipes">Pipes &amp; Tubes</button>
+                <button class="filter-btn" data-filter="sheets">Plates &amp; Slabs</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1: Steel Coils -->
+                <div class="product-card reveal-fade" data-category="coils">
+                    <span class="product-badge-float">HR &bull; CR &bull; GI</span>
+                    <div class="product-img-box">
+                        <img src="images/product_coils.png" alt="Steel Coils and Strips">
+                    </div>
+                    <div class="product-body">
+                        <div class="product-grades">
+                            <span class="grade-tag">IS 2062</span>
+                            <span class="grade-tag">ASTM A1011</span>
+                            <span class="grade-tag">SAE 1008</span>
+                        </div>
+                        <h3 class="product-title">High-Tensile Steel Coils</h3>
+                        <p class="product-desc">
+                            Hot rolled, cold rolled, and continuous galvanized slit coils engineered for precision stamping, automotive chassis, and extended industrial roll-forming.
+                        </p>
+                        <div class="product-spec-table">
+                            <div class="spec-row">
+                                <span class="spec-key">Thickness Range:</span>
+                                <span class="spec-val">0.40 mm &ndash; 16.0 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key">Slit Width:</span>
+                                <span class="spec-val">Up to 2,000 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key">Tensile Strength:</span>
+                                <span class="spec-val">340 &ndash; 780 MPa</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <a href="#calculator" class="product-link">
+                                <span>Calculate Weight</span> &rarr;
+                            </a>
+                            <button class="btn btn-outline-steel btn-sm open-rfq-btn" data-product="High-Tensile Steel Coils">
+                                Request RFQ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Pipes and Tubes -->
+                <div class="product-card reveal-fade" data-category="pipes">
+                    <span class="product-badge-float">SEAMLESS &bull; ERW</span>
+                    <div class="product-img-box">
+                        <img src="images/product_pipes.png" alt="Precision Steel Pipes and Tubes">
+                    </div>
+                    <div class="product-body">
+                        <div class="product-grades">
+                            <span class="grade-tag">API 5L Gr.B</span>
+                            <span class="grade-tag">ASTM A106</span>
+                            <span class="grade-tag">IS 1239</span>
+                        </div>
+                        <h3 class="product-title">Industrial Pipes &amp; Tubes</h3>
+                        <p class="product-desc">
+                            Seamless heavy-wall and ERW welded steel tubes crafted to precise concentricity and pressure standards for oil &amp; gas, fluid transport, and structural framing.
+                        </p>
+                        <div class="product-spec-table">
+                            <div class="spec-row">
+                                <span class="spec-key">Outer Diameter:</span>
+                                <span class="spec-val">15 mm &ndash; 610 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key">Schedule / Wall:</span>
+                                <span class="spec-val">SCH 40, 80, 160, XXS</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key">Testing:</span>
+                                <span class="spec-val">Hydrostatic &amp; Eddy Current</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <a href="#calculator" class="product-link">
+                                <span>Calculate Weight</span> &rarr;
+                            </a>
+                            <button class="btn btn-outline-steel btn-sm open-rfq-btn" data-product="Industrial Pipes &amp; Tubes">
+                                Request RFQ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Sheets and Plates -->
+                <div class="product-card reveal-fade" data-category="sheets">
+                    <span class="product-badge-float">HEAVY STRUCTURAL</span>
+                    <div class="product-img-box">
+                        <img src="images/product_sheets.png" alt="Heavy Steel Sheets and Plates">
+                    </div>
+                    <div class="product-body">
+                        <div class="product-grades">
+                            <span class="grade-tag">ASTM A36</span>
+                            <span class="grade-tag">SA 516 Gr.70</span>
+                            <span class="grade-tag">EN 10025</span>
+                        </div>
+                        <h3 class="product-title">Structural Sheets &amp; Plates</h3>
+                        <p class="product-desc">
+                            Flat-rolled heavy-gauge structural plates offering exceptional yield strength, uniform grain structure, and high fatigue resistance for civil mega-projects and shipbuilding.
+                        </p>
+                        <div class="product-spec-table">
+                            <div class="spec-row">
+                                <span class="spec-key">Plate Thickness:</span>
+                                <span class="spec-val">3 mm &ndash; 150 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key">Standard Width:</span>
+                                <span class="spec-val">1,250 mm &ndash; 3,000 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key">Ultrasonic Flaw:</span>
+                                <span class="spec-val">100% Tested (ASTM A578)</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <a href="#calculator" class="product-link">
+                                <span>Calculate Weight</span> &rarr;
+                            </a>
+                            <button class="btn btn-outline-steel btn-sm open-rfq-btn" data-product="Structural Sheets &amp; Plates">
+                                Request RFQ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manufacturing Excellence Pipeline (Stepped Industrial Flow) -->
+    <section class="section-padding pipeline-section" id="pipeline">
+        <div class="container">
+            <div class="section-header text-center reveal-fade">
+                <span class="section-tag">Quality Process Architecture</span>
+                <h2 class="section-title">6-Stage Manufacturing Pipeline</h2>
+                <p class="section-subtitle">
+                    From spectroscopic chemical assaying to precision cold forming and ultrasonic certification, every manufacturing checkpoint ensures total metallurgical consistency.
+                </p>
+            </div>
+
+            <div class="pipeline-grid">
+                <!-- Step 01 -->
+                <div class="pipeline-step reveal-fade">
+                    <div class="step-num-watermark">01</div>
+                    <span class="step-pill">STAGE 01 &bull; RAW METALLURGY</span>
+                    <h3 class="step-title">Spectro Chemical Assaying</h3>
+                    <p class="step-desc">
+                        Baseline incoming billets and virgin slabs undergo Optical Emission Spectrometry to verify carbon, manganese, silicon, and trace element chemistry.
+                    </p>
+                    <div class="step-tech-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Verified to ASTM E415 Chemical Standards</span>
+                    </div>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="pipeline-step reveal-fade">
+                    <div class="step-num-watermark">02</div>
+                    <span class="step-pill">STAGE 02 &bull; THERMOMECHANICAL</span>
+                    <h3 class="step-title">Controlled Roll Forming</h3>
+                    <p class="step-desc">
+                        Multi-stand computerized continuous rolling mills control grain boundaries, recrystallization temperatures, and uniform thickness across the entire coil width.
+                    </p>
+                    <div class="step-tech-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Laser Gauge Profile Continuous Monitoring</span>
+                    </div>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="pipeline-step reveal-fade">
+                    <div class="step-num-watermark">03</div>
+                    <span class="step-pill">STAGE 03 &bull; FABRICATION</span>
+                    <h3 class="step-title">Precision Slitting &amp; Milling</h3>
+                    <p class="step-desc">
+                        High-capacity rotary shear slitters, CNC mandrel tube formers, and automated plasma profile cutting beds size components to tight tolerances.
+                    </p>
+                    <div class="step-tech-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Tolerance Margin: &plusmn;0.02 mm</span>
+                    </div>
+                </div>
+
+                <!-- Step 04 -->
+                <div class="pipeline-step reveal-fade">
+                    <div class="step-num-watermark">04</div>
+                    <span class="step-pill">STAGE 04 &bull; TESTING</span>
+                    <h3 class="step-title">Ultrasonic &amp; Flaw Inspection</h3>
+                    <p class="step-desc">
+                        Non-destructive testing (NDT) passes all pressure pipes and heavy plates through multi-angle ultrasonic transducer scanning to eliminate internal laminations.
+                    </p>
+                    <div class="step-tech-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Level III ASNT Certified Operators</span>
+                    </div>
+                </div>
+
+                <!-- Step 05 -->
+                <div class="pipeline-step reveal-fade">
+                    <div class="step-num-watermark">05</div>
+                    <span class="step-pill">STAGE 05 &bull; SURFACE</span>
+                    <h3 class="step-title">Passivation &amp; Protective Coating</h3>
+                    <p class="step-desc">
+                        Continuous hot-dip galvanizing baths, anti-corrosion pickling &amp; oiling, and epoxy internal linings ensure maximum service life under severe environments.
+                    </p>
+                    <div class="step-tech-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Zinc Coating from 120 gsm to 600 gsm</span>
+                    </div>
+                </div>
+
+                <!-- Step 06 -->
+                <div class="pipeline-step reveal-fade">
+                    <div class="step-num-watermark">06</div>
+                    <span class="step-pill">STAGE 06 &bull; LOGISTICS</span>
+                    <h3 class="step-title">Batch Bundling &amp; Dispatch</h3>
+                    <p class="step-desc">
+                        Corrosion-inhibiting wrapping, heavy-duty steel circumferential strapping, barcode tracking, and just-in-time dispatch across domestic and port terminals.
+                    </p>
+                    <div class="step-tech-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Global Export Packaging Standard</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Assurance & Metallurgical Laboratory -->
+    <section class="section-padding quality-section" id="quality">
+        <div class="container">
+            <div class="quality-grid">
+                <!-- Media Side -->
+                <div class="quality-media-wrap reveal-fade">
+                    <img src="images/quality_lab_testing.jpg" alt="Sankalp Metal Metallurgical Testing Rig">
+                    <div class="lab-live-badge">
+                        <span class="pulse-dot"></span>
+                        <span>LAB ACCREDITATION: ISO/IEC 17025</span>
+                    </div>
+                    <div class="lab-specs-dock">
+                        <div class="lab-spec-item">
+                            <strong>100%</strong>
+                            <span>Ultrasonic Tested</span>
+                        </div>
+                        <div class="lab-spec-item">
+                            <strong>10,000 PSI</strong>
+                            <span>Hydrostatic Rig</span>
+                        </div>
+                        <div class="lab-spec-item">
+                            <strong>EN 10204 3.1</strong>
+                            <span>Mill Test Reports</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="reveal-fade">
+                    <span class="section-tag">Quality Assurance</span>
+                    <h2 class="section-title">Zero Compromise Metallurgy. Tested to Extreme Limits.</h2>
+                    <p style="color:var(--color-titanium-400); font-size:1.0625rem; line-height:1.7;">
+                        Our on-site physical and chemical testing laboratory ensures that every shipment is backed by verified mechanical properties, yield stress ratios, and dimensional accuracy.
+                    </p>
+
+                    <div class="quality-feature-list">
+                        <div class="quality-feature-item">
+                            <div class="quality-icon-box">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m10 15 5-3-5-3v6z"></path></svg>
+                            </div>
+                            <div class="quality-feature-text">
+                                <h4>Universal Tensile &amp; Yield Testing</h4>
+                                <p>Computerized 1000 kN tensile test frames record elongation, yield point, and ultimate tensile strength curves for structural certs.</p>
+                            </div>
+                        </div>
+
+                        <div class="quality-feature-item">
+                            <div class="quality-icon-box">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2v20"></path></svg>
+                            </div>
+                            <div class="quality-feature-text">
+                                <h4>Charpy V-Notch Impact Rig</h4>
+                                <p>Sub-zero toughness evaluation down to -40&deg;C ensures steel will not undergo brittle fracture in arctic and cryogenic installations.</p>
+                            </div>
+                        </div>
+
+                        <div class="quality-feature-item">
+                            <div class="quality-icon-box">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <div class="quality-feature-text">
+                                <h4>Certified 3.1 Mill Test Certificates</h4>
+                                <p>Every order is accompanied by digital traceability, original heat numbers, and chemistry breakdown ready for auditor compliance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Power -->
+    <section class="section-padding industries-section" id="industries">
+        <div class="container">
+            <div class="section-header text-center reveal-fade">
+                <span class="section-tag">Market Sectors</span>
+                <h2 class="section-title">Industries We Power Globally</h2>
+                <p class="section-subtitle">
+                    Engineered steel grades selected specifically for dynamic loading, severe thermal stress, and corrosive environments.
+                </p>
+            </div>
+
+            <div class="industries-grid">
+                <!-- Industry 1 -->
+                <div class="industry-card reveal-fade">
+                    <div class="industry-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <h3 class="industry-title">Civil Mega-Infrastructure</h3>
+                    <p class="industry-desc">High-yield structural plates, hollow structural section (HSS) columns, and girders for high-rise towers, bridges, and commercial ports.</p>
+                    <div class="industry-key-components">
+                        <span class="comp-label">Key Specifications:</span>
+                        <div class="comp-pills">
+                            <span class="comp-pill">IS 2062 E350</span>
+                            <span class="comp-pill">ASTM A572 Gr.50</span>
+                            <span class="comp-pill">EN 10025 S355</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry 2 -->
+                <div class="industry-card reveal-fade">
+                    <div class="industry-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="17" r="2"></circle><circle cx="17" cy="17" r="2"></circle><path d="M5 17h-2v-4l2-5h9l4 5h1a2 2 0 0 1 2 2v2h-2"></path></svg>
+                    </div>
+                    <h3 class="industry-title">Automotive &amp; Heavy Vehicles</h3>
+                    <p class="industry-desc">High-tensile cold-rolled and galvanized steel coils customized for vehicle chassis frames, suspension tubes, and structural pressings.</p>
+                    <div class="industry-key-components">
+                        <span class="comp-label">Key Specifications:</span>
+                        <div class="comp-pills">
+                            <span class="comp-pill">DP 600 / 800</span>
+                            <span class="comp-pill">SAE J2340</span>
+                            <span class="comp-pill">Precision Slit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry 3 -->
+                <div class="industry-card reveal-fade">
+                    <div class="industry-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <h3 class="industry-title">Oil, Gas &amp; Petrochemical</h3>
+                    <p class="industry-desc">Seamless heavy-wall line pipe, high-pressure heat exchanger tubing, and ASTM A516 boiler quality steel plates for refineries.</p>
+                    <div class="industry-key-components">
+                        <span class="comp-label">Key Specifications:</span>
+                        <div class="comp-pills">
+                            <span class="comp-pill">API 5L X52 / X65</span>
+                            <span class="comp-pill">ASTM A106 Gr.B</span>
+                            <span class="comp-pill">NACE MR0175</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry 4 -->
+                <div class="industry-card reveal-fade">
+                    <div class="industry-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    </div>
+                    <h3 class="industry-title">Heavy Equipment &amp; Mining</h3>
+                    <p class="industry-desc">Abrasion-resistant wear plates and customized forged shafts designed to withstand extreme impact, vibration, and continuous cycles.</p>
+                    <div class="industry-key-components">
+                        <span class="comp-label">Key Specifications:</span>
+                        <div class="comp-pills">
+                            <span class="comp-pill">AR 400 / 500</span>
+                            <span class="comp-pill">Hardox Equivalents</span>
+                            <span class="comp-pill">Custom Flame Cut</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Sankalp Metal (Grid of Excellence) -->
+    <section class="section-padding why-section">
+        <div class="container">
+            <div class="section-header text-center reveal-fade">
+                <span class="section-tag">Enterprise Advantages</span>
+                <h2 class="section-title">Why Global Enterprises Partner With Us</h2>
+                <p class="section-subtitle">Reliable supply chains, transparent metallurgy, and rapid fulfillment engineered for long-term commercial partnerships.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card reveal-fade">
+                    <div class="why-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                    <h4 class="why-title">Precision Metallurgy</h4>
+                    <p class="why-text">Guaranteed chemical and mechanical conformity according to strict ISO 9001:2015 quality control systems.</p>
+                </div>
+
+                <div class="why-card reveal-fade">
+                    <div class="why-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                    </div>
+                    <h4 class="why-title">Dependable Supply Chain</h4>
+                    <p class="why-text">Continuous stockpiling and automated order tracking ensure just-in-time delivery to prevent costly project shutdowns.</p>
+                </div>
+
+                <div class="why-card reveal-fade">
+                    <div class="why-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                    </div>
+                    <h4 class="why-title">Fast RFQ Turnaround</h4>
+                    <p class="why-text">Dedicated commercial engineering desks provide formal quotation specs and mill dispatch schedules within 24 to 48 hours.</p>
+                </div>
+
+                <div class="why-card reveal-fade">
+                    <div class="why-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 6l7 7-7 7M5 10v10"></path></svg>
+                    </div>
+                    <h4 class="why-title">Custom Sizing Flexibility</h4>
+                    <p class="why-text">Complete bespoke processing including slitting, precision laser cutting, beveling, and protective surface treatments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grand Call to Action Banner -->
+    <section class="section-padding" style="background:var(--color-surface-subtle);">
+        <div class="container reveal-fade">
+            <div class="cta-banner">
+                <span class="section-tag" style="justify-content:center; margin-bottom:12px; color:var(--color-forge-light);">Direct Mill Procurement</span>
+                <h2 class="cta-title">Have a Custom Steel or Heavy Alloy Requirement?</h2>
+                <p class="cta-subtitle">
+                    Connect with our senior metallurgists and procurement team. We supply certified steel coils, pipes, and heavy structural plates tailored to your engineering drawings.
+                </p>
+                <div class="cta-btns">
+                    <button class="btn btn-forge btn-lg open-rfq-btn">
+                        <span>Submit an Instant RFQ</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                    <a href="contact.html" class="btn btn-glass btn-lg" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.25); color:#FFFFFF;">
+                        <span>Contact Factory Headquarters</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industrial Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1: Brand -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-wrap">
+                        <img src="images/logo.png" alt="Sankalp Metal" class="brand-logo" style="filter: brightness(0) invert(1);">
+                    </a>
+                    <p>
+                        Sankalp Metal is a premier steel manufacturing and precision alloy engineering company serving global automotive, infrastructure, and heavy manufacturing sectors.
+                    </p>
+                    <div class="cert-strip">
+                        <span class="cert-pill">ISO 9001:2015</span>
+                        <span class="cert-pill">CE MARK</span>
+                        <span class="cert-pill">BIS CERTIFIED</span>
+                        <span class="cert-pill">ASTM A578</span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Products -->
+                <div class="footer-col">
+                    <h4>Steel Solutions</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#products">&rsaquo; Steel Coils &amp; Rolls</a></li>
+                        <li><a href="#products">&rsaquo; Seamless &amp; ERW Pipes</a></li>
+                        <li><a href="#products">&rsaquo; Heavy Structural Plates</a></li>
+                        <li><a href="#products">&rsaquo; Slit Strips &amp; Flats</a></li>
+                        <li><a href="#calculator">&rsaquo; Material Weight Estimator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="about.html">&rsaquo; About Sankalp Metal</a></li>
+                        <li><a href="#pipeline">&rsaquo; Manufacturing Process</a></li>
+                        <li><a href="#quality">&rsaquo; Metallurgy Testing Lab</a></li>
+                        <li><a href="#industries">&rsaquo; Industries Served</a></li>
+                        <li><a href="contact.html">&rsaquo; Contact Commercial Desk</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div class="footer-col">
+                    <h4>Mill Headquarters</h4>
+                    <div class="footer-contact-items">
+                        <div class="footer-contact-row">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <div>
+                                <strong style="color:#FFF; display:block;">Commercial Hotline</strong>
+                                <span>+91 (0) 22 4000 8900</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-contact-row">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <div>
+                                <strong style="color:#FFF; display:block;">Direct Quotations</strong>
+                                <span>rfq@sankalpmetal.com</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-contact-row">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <div>
+                                <strong style="color:#FFF; display:block;">Plant &amp; Rolling Mill</strong>
+                                <span>Industrial Zone, Phase II, Gujarat &bull; India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Sankalp Metal Private Limited. All Rights Reserved.</div>
+                <div style="display:flex; gap:20px;">
+                    <a href="contact.html">Privacy Policy</a>
+                    <a href="contact.html">Terms of Supply</a>
+                    <a href="contact.html">Quality Assurance Manual</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Quick Quote / RFQ Modal -->
+    <div class="rfq-modal-backdrop" id="rfqModal">
+        <div class="rfq-modal-card">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close RFQ Modal">&times;</button>
+            <div style="margin-bottom:24px;">
+                <span class="section-tag" style="margin-bottom:8px;">Fast-Track RFQ</span>
+                <h3 style="font-size:1.75rem; color:var(--color-text-heading);">Request Formal Price Quotation</h3>
+                <p style="font-size:0.875rem; color:var(--color-text-muted);">Our technical sales desk responds within 24 business hours with certified mill availability and freight estimates.</p>
+            </div>
+
+            <div class="form-success-banner" id="rfqSuccess">
+                ✓ Thank you! Your RFQ has been logged. An engineering quote specialist will contact you shortly.
+            </div>
+
+            <form id="rfqModalForm">
+                <div class="form-row-2">
+                    <div class="form-group">
+                        <label class="form-label">Full Name *</label>
+                        <input type="text" class="form-control" id="rfqName" required placeholder="e.g. Rahul Sharma">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Company / Enterprise *</label>
+                        <input type="text" class="form-control" id="rfqCompany" required placeholder="e.g. Apex Heavy Fabricators Ltd">
+                    </div>
+                </div>
+
+                <div class="form-row-2">
+                    <div class="form-group">
+                        <label class="form-label">Work Email *</label>
+                        <input type="email" class="form-control" id="rfqEmail" required placeholder="name@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone / WhatsApp *</label>
+                        <input type="tel" class="form-control" id="rfqPhone" required placeholder="+91 98765 43210">
+                    </div>
+                </div>
+
+                <div class="form-row-2">
+                    <div class="form-group">
+                        <label class="form-label">Product Category</label>
+                        <select class="form-control" id="rfqProductCategory">
+                            <option value="Steel Coils">Steel Coils &amp; Strips</option>
+                            <option value="Pipes & Tubes">Seamless &amp; Welded Pipes</option>
+                            <option value="Structural Plates">Heavy Structural Plates</option>
+                            <option value="Custom Machined Components">Custom Fabricated Components</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Estimated Quantity (Tons / Meters)</label>
+                        <input type="text" class="form-control" id="rfqQuantity" placeholder="e.g. 25 Metric Tons">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Technical Specifications / Alloy Grade / Notes</label>
+                    <textarea class="form-control" id="rfqNotes" placeholder="Specify steel grade (e.g. ASTM A36, IS 2062), thickness, width, delivery port or special testing requirements..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-forge btn-lg" style="width:100%;">
+                    <span>Submit Request to Mill Desk</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

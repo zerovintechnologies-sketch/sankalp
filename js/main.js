@@ -15,27 +15,61 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 2. Mobile Menu Toggle
+    // 2. Mobile Menu Toggle with Backdrop & Scroll Lock
     const mobileToggle = document.getElementById('mobileToggle');
     const mainNav = document.getElementById('mainNav');
+    
+    // Create mobile backdrop if not present
+    let mobileBackdrop = document.querySelector('.mobile-nav-backdrop');
+    if (!mobileBackdrop) {
+        mobileBackdrop = document.createElement('div');
+        mobileBackdrop.className = 'mobile-nav-backdrop';
+        document.body.appendChild(mobileBackdrop);
+    }
+
+    function closeMobileMenu() {
+        if (!mainNav) return;
+        mainNav.classList.remove('mobile-active');
+        mobileBackdrop.classList.remove('active');
+        document.body.style.overflow = '';
+        if (mobileToggle) {
+            mobileToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+        }
+    }
+
+    function openMobileMenu() {
+        if (!mainNav) return;
+        mainNav.classList.add('mobile-active');
+        mobileBackdrop.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        if (mobileToggle) {
+            mobileToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+        }
+    }
 
     if (mobileToggle && mainNav) {
-        mobileToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('mobile-active');
-            const isOpen = mainNav.classList.contains('mobile-active');
-            mobileToggle.innerHTML = isOpen 
-                ? '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>'
-                : '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+        mobileToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (mainNav.classList.contains('mobile-active')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
         });
+
+        // Close on backdrop click
+        mobileBackdrop.addEventListener('click', closeMobileMenu);
 
         // Close on link click
         mainNav.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mainNav.classList.remove('mobile-active');
-                if (mobileToggle) {
-                    mobileToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
-                }
-            });
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Auto close on desktop resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 1024 && mainNav.classList.contains('mobile-active')) {
+                closeMobileMenu();
+            }
         });
     }
 

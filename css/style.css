@@ -1827,22 +1827,43 @@ textarea.form-control {
   transform: translateY(0);
 }
 
-/* Mobile Navigation Drawer (Light Mode) */
+/* ==========================================================================
+   Mobile Responsiveness Enhancements (1024px, 768px, 640px, 480px)
+   ========================================================================== */
+
+/* Mobile Backdrop */
+.mobile-nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-nav-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media (max-width: 1023px) {
   .desktop-nav {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 320px;
+    width: min(320px, 85vw);
     height: 100vh;
     background: #FFFFFF;
     border-left: 1px solid var(--color-border);
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 80px 32px 40px;
+    padding: 72px 24px 36px;
     box-shadow: -15px 0 40px rgba(15, 23, 42, 0.15);
-    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 1001;
     overflow-y: auto;
   }
@@ -1852,11 +1873,16 @@ textarea.form-control {
   }
 
   .mobile-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    padding: 0;
   }
 
   .nav-link {
-    font-size: 1.0625rem;
+    font-size: 1rem;
     width: 100%;
     padding: 14px 0;
     border-bottom: 1px solid var(--color-border-subtle);
@@ -1870,6 +1896,246 @@ textarea.form-control {
     visibility: visible;
     box-shadow: none;
     background: var(--color-surface-subtle);
-    margin: 8px 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    margin: 8px 0 14px;
+    padding: 6px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 64px 0;
+  }
+
+  .container {
+    padding: 0 18px;
+  }
+
+  .top-ticker {
+    padding: 8px 0;
+  }
+
+  .top-ticker-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+  }
+
+  .ticker-status {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .ticker-badges {
+    font-size: 0.6875rem;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .nav-container {
+    height: 72px;
+  }
+
+  .brand-logo {
+    height: 40px;
+  }
+
+  .hero-epic {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .hero-pill-badge {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .hero-headline {
+    font-size: 2.25rem;
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 30px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    padding: 14px 20px;
+  }
+
+  .hero-capabilities-dock {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .dock-item {
+    gap: 14px;
+  }
+
+  .dock-val {
+    font-size: 1.5rem;
+  }
+
+  .calc-card {
+    padding: 24px 18px;
+  }
+
+  .calc-shape-tabs {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .calc-dims-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .calc-result-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .result-metric-val {
+    font-size: 1.5rem;
+  }
+
+  .filter-bar {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.8125rem;
+  }
+
+  .pipeline-step {
+    padding: 28px 20px;
+  }
+
+  .step-num-watermark {
+    font-size: 3.5rem;
+  }
+
+  .quality-media-wrap {
+    box-shadow: var(--shadow-md);
+  }
+
+  .lab-specs-dock {
+    padding: 16px 12px;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .lab-spec-item strong {
+    font-size: 1rem;
+  }
+
+  .lab-spec-item span {
+    font-size: 0.6875rem;
+  }
+
+  .quality-feature-item {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .cta-banner {
+    padding: 44px 20px;
+  }
+
+  .cta-title {
+    font-size: 1.875rem;
+  }
+
+  .cta-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+
+  .cta-btns {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .cta-btns .btn {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 56px 0 24px;
+  }
+
+  .footer-grid {
+    gap: 36px;
+    margin-bottom: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .rfq-modal-card {
+    padding: 24px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-actions .btn-sm span {
+    display: inline-block;
+  }
+
+  .header-actions .btn-sm {
+    padding: 8px 12px;
+    font-size: 0.75rem;
+  }
+
+  .header-actions .btn-sm svg {
+    display: none;
+  }
+
+  .hero-headline {
+    font-size: 1.95rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .product-body {
+    padding: 20px 16px;
+  }
+
+  .product-img-box {
+    height: 200px;
+  }
+
+  .why-card {
+    padding: 28px 20px;
   }
 }

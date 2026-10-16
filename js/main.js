@@ -19,17 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileToggle = document.getElementById('mobileToggle');
     const mainNav = document.getElementById('mainNav');
     
-    // Create mobile backdrop if not present
+    // Create mobile backdrop if not present (insert before header to ensure proper DOM stacking)
     let mobileBackdrop = document.querySelector('.mobile-nav-backdrop');
     if (!mobileBackdrop) {
         mobileBackdrop = document.createElement('div');
         mobileBackdrop.className = 'mobile-nav-backdrop';
-        document.body.appendChild(mobileBackdrop);
+        if (header && header.parentNode) {
+            header.parentNode.insertBefore(mobileBackdrop, header);
+        } else {
+            document.body.prepend(mobileBackdrop);
+        }
     }
 
     function closeMobileMenu() {
         if (!mainNav) return;
         mainNav.classList.remove('mobile-active');
+        if (header) header.classList.remove('mobile-open');
         mobileBackdrop.classList.remove('active');
         document.body.style.overflow = '';
         if (mobileToggle) {
@@ -40,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function openMobileMenu() {
         if (!mainNav) return;
         mainNav.classList.add('mobile-active');
+        if (header) header.classList.add('mobile-open');
         mobileBackdrop.classList.add('active');
         document.body.style.overflow = 'hidden';
         if (mobileToggle) {

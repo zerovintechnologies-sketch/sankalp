@@ -3,7 +3,27 @@
  * Controls Navigation, Weight Estimator, Product Filters, RFQ Modal, and Scroll Animations
  */
 
+// Always scroll to top on page refresh/reload
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
+window.addEventListener('beforeunload', () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+});
+
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted || !window.location.hash) {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
+    if (!window.location.hash) {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
 
     // 1. Header Scroll Elevation
     const header = document.querySelector('.header');

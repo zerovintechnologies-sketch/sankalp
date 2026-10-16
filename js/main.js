@@ -60,9 +60,23 @@ document.addEventListener('DOMContentLoaded', () => {
         // Close on backdrop click
         mobileBackdrop.addEventListener('click', closeMobileMenu);
 
+        // Close on drawer close button click
+        mainNav.addEventListener('click', (e) => {
+            if (e.target.closest('#drawerCloseBtn')) {
+                closeMobileMenu();
+            }
+        });
+
         // Close on link click
         mainNav.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close on Escape key press
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mainNav.classList.contains('mobile-active')) {
+                closeMobileMenu();
+            }
         });
 
         // Auto close on desktop resize
